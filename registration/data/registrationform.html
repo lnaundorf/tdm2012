@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//DE" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+    <title>Tag der Mathematik 2012 - Anmeldung</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Registrierung der Schüler-Teams für den Wettbewerb." />
+        <meta name="robots" content="index, follow" />
+    <link href="../css/stylesheet.css" type="text/css" rel="stylesheet" />
+	<link href="../css/stylesheet2.css" type="text/css" rel="stylesheet" />
+	<!--[if lt IE 8]>
+		<link href="../registrationcss/IE7-stylesheet.css" type="text/css" rel="stylesheet" />
+	<![endif]-->
+	<link href="../favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+</head>
+
+<body>
+<div id="box">
+    <!--Header Anfang-->
+<div id="head">
+    <!--Logo der Freien Universität Berlin Anfang-->
+    <h1>
+        <a href="http://www.fu-berlin.de/" title="Zur Startseite der Freien Universität Berlin">
+            <img src="../images/fu_logo.gif" width="225" height="63" alt="Logo der Freien Universität Berlin" />
+        </a>
+    </h1>
+    <!--Logo der Freien Universität Berlin Ende-->
+        <!--Service-Navigation Anfang-->
+        <ul id="service-navigation">
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="http://www.mi.fu-berlin.de/impressum/">Impressum</a></li>
+        </ul>
+        <!--Service-Navigation Ende-->
+    <!--Header-Bild Anfang-->
+    <h2>
+    	Tag der <br />Mathematik 2012
+    </h2>
+    <!--Header-Bild Ende-->
+</div>
+<!--Header Ende-->
+
+	
+<!--Menu Anfang-->
+<div id="left">
+	<ul id="menu">
+        <li><a href="../index.html">Home</a></li>  
+        <li><a href="program.html">Programm</a></li>
+        <li><a href="exhibition.html">Ausstellung</a></li>
+        <li><a href="lecture.html">Vorträge</a></li>
+        <li><a href="competition.html">Wettbewerb</a></li>
+            <li class="lower_menu"><a href="registration.html">&nbsp;&nbsp;&nbsp;Anmeldung</a></li>
+            <li class="lower_menu"><a href="registeredteams.php">&nbsp;&nbsp;&nbsp;Angemeldete Teams</a></li>
+            <li class="lower_menu"><a href="prizes.html">&nbsp;&nbsp;&nbsp;Preise</a></li>
+        <li><a href="teacher.html">Lehrerfortbildung</a></li>
+		<li><a href="abelprice.html">Der Abelpreis</a></li>
+        <li><a href="bottle.html">Die Kleinsche Flasche</a></li>
+        <li><a href="partner.html">Spender und Sponsoren</a></li>
+        <li><a href="promoter.html">Veranstalter</a></li>
+        <li><a href="place.html">Ort</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="archive.html">Archiv</a></li>
+    </ul>
+</div>
+<!--Menu Ende-->
+
+<!--Content Anfang-->
+<div id="content">
+	<h3>Anmeldung</h3>
+<script type="text/javascript">
+//<![CDATA[
+function hideerror() {
+	document.getElementById("js-error").style.display ="none";
+	document.getElementById("form").style.display = "block";
+}
+
+var alreadyrunflag = 0;
+if (document.addEventListener) {
+	document.addEventListener("DOMContentLoaded", function(){
+		alreadyrunflag = 1;
+		hideerror()
+	}, false);
+} else if (document.all && !window.opera){
+	document.write('<script type="text/javascript" id="contentloadtag" defer="defer" src="javascript:void(0)"><\/script>')
+	var contentloadtag = document.getElementById("contentloadtag");
+	contentloadtag.onreadystatechange = function(){
+		if (this.readyState == "complete"){
+			alreadyrunflag = 1;
+			hideerror();
+		}
+	};
+}
+
+window.onload = function(){
+  setTimeout("if (!alreadyrunflag) hideerror()", 0);
+}
+//]]>
+</script>
+<div class="alert-message error" id="js-error">Die Anmeldung benötigt JavaScript. Bitte aktivieren Sie JavaScript in Ihrem Browser. Eine Anleitung finden Sie dazu <a href="http://jumk.de/javascript.html" target="_blank">HIER</a>.</div>
+<form method="post" name="anmeldung_form" id="form" style="display: none">
+<fieldset>
+<legend>Allgemeine Informationen</legend>
+<div class="clearfix" id="stufediv"><label>Klassenstufe:</label><div class="input"><select name="anmeldung" onchange="setStufe(this.value)"><option value="0" id="stufezero">-- Bitte auswählen --</option><option value="1">Stufe I (Klasse 7 und 8)</option><option value="2">Stufe II (Klasse 9 und 10)</option><option value="3">Stufe III (Klasse 11 bis 12/13)</option></select></div></div>
+<div class="clearfix" id="schulediv"><label>Name der Schule:</label><div class="input"><div><input class="large" type="text" name="anmeldung" onkeydown="switchResults(event)" onkeyup="searchSchool(event, this)"  id="schoolinput" onblur="schoolSearchBlur()"/><br /></div><div id="schoolsearch"></div></div></div>
+<div class="clearfix" id="regiondiv"><label>Region:</label><div class="input"><select name="anmeldung" onchange="changeRegion(this)" id="regionSelect"><option value="0" id="regionzero">-- Bitte auswählen --</option><option value="1">Charlottenburg-Wilmersdorf</option><option value="2">Friedrichshain-Kreuzberg</option><option value="3">Lichtenberg</option><option value="4">Marzahn-Hellersdorf</option><option value="5">Mitte</option><option value="6">Neukölln</option><option value="7">Pankow</option><option value="8">Reinickendorf</option><option value="9">Spandau</option><option value="10">Steglitz-Zehlendorf</option><option value="11">Tempelhof-Schöneberg</option><option value="12">Treptow-Köpenick</option><option value="13">Brandenburg</option><option value="14">andere Region</option></select></div></div>
+<div class="clearfix" id="teamNamediv"><label>Teamname:</label><div class="input"><input class="large" type="text" name="anmeldung" maxlength="40"/><span class="help-block" id="team-help" style="display: none">Dieser Teamname ist bereits vergeben.<br>Bitte wählen Sie einen anderen Namen aus.</span></div></div>
+<div id="description">
+	<div class="titel">Kontaktperson</div>
+	<div class="inhalt">Jedes Team muss eine Kontaktperson angeben. Dieser Kontaktperson wird später per E-Mail die Teamnummer mitgeteilt. Diese ist wichtig, da sie später den Sitzplatz des Teams bestimmt. Die Kontaktperson kann ein Teammitglied sein, oder aber eine Person, die das Team am Tag begleitet.
+	</div>
+	</div>
+<div class="clearfix" id="kontaktdiv"><label>Kontaktperson:</label><div class="input"><input class="large" type="text" name="anmeldung" placeholder="Vorname Nachname" value="Vorname Nachname" onfocus="contactHint(this, true)" onblur="contactHint(this, false)" style="color: #c7c7c7"/></div></div>
+<div class="clearfix" id="emaildiv"><label>Kontakt-E-Mail:</label><div class="input"><input class="large" type="text" name="anmeldung"/><span class="help-block" id="mail-help" style="display: none">Bitte geben Sie eine gültige E-Mail-Adresse an.</span></div></div>
+<div id="description">
+	<div class="titel">Mittagessen</div>
+	<div class="inhalt">Die Wettbewerbsteilnehmer sowie eine Begleitperson können für einen Kostenbeitrag von je <strong>2,50 €</strong> nach dem Wettbewerb ein Mittagessen inkl. Getränk erhalten.
+	Zur Auswahl stehen drei Gerichte. Der Gesamtbetrag wird während des Wettbewerbs teamweise eingesammelt. Die Essensbons werden zusammen mit den Aufgaben ausgegeben.
+	</div>
+	</div>
+<div class="clearfix" id="begleitEssendiv"><label>Essen für eine eventuelle Begleitperson:</label><div class="input"><ul class="inputs-list"><li><label name="begleitEssen"><input type="radio" name="BegleitInput" value="0" checked="checked"/><span>Kein Essen</span></label></li><li><label><input type="radio" name="BegleitInput" value="1"/><span>Hähnchenschnitzel mit Gemüse und Kartoffelpüree</span></label></li><li><label><input type="radio" name="BegleitInput" value="2"/><span>Currywurst mit Pommes Frites</span></label></li><li><label><input type="radio" name="BegleitInput" value="3"/><span>Karotten-Sticks mit Soße und Nudeln (vegetarisch)</span></label></li></ul></div></div>
+<div class="clearfix" id="countdiv"><label>Anzahl der Team-Mitglieder:</label><div class="input"><select name="anmeldung" id="nr" onchange="setNumber(this.value)"><option id="numberzero">-- Bitte auswählen --</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div></div>
+<div class="person" id="person1"><fieldset><legend>Teammitglied 1</legend>
+<div class="clearfix" id="vorname1div"><label>Vorname:</label><div class="input"><input type="text" name="personInput1"/></div></div>
+<div class="clearfix" id="name1div"><label>Nachname:</label><div class="input"><input type="text" name="personInput1"/></div></div>
+<div class="clearfix" id="klasse1div"><label>Klasse:</label><div class="input"><ul class="inputs-list" id="stufe_span1"><li><span class="red">Bitte wählen Sie oben die passende Klassenstufe aus</span></li></ul></div></div>
+<div class="clearfix" id="essen1div"><label>Mittagessen:</label><div class="input"><ul class="inputs-list"><li><label name="person1essen"><input type="radio" name="EssenInput1" value="0" checked="checked"/><span>Kein Essen</span></label></li><li><label><input type="radio" name="EssenInput1" value="1"/><span>Hähnchenschnitzel mit Gemüse und Kartoffelpüree</span></label></li><li><label><input type="radio" name="EssenInput1" value="2"/><span>Currywurst mit Pommes Frites</span></label></li><li><label><input type="radio" name="EssenInput1" value="3"/><span>Karotten-Sticks mit Soße und Nudeln (vegetarisch)</span></label></li></ul></div></div></fieldset></div>
+<div class="person" id="person2"><fieldset><legend>Teammitglied 2</legend>
+<div class="clearfix" id="vorname2div"><label>Vorname:</label><div class="input"><input type="text" name="personInput2"/></div></div>
+<div class="clearfix" id="name2div"><label>Nachname:</label><div class="input"><input type="text" name="personInput2"/></div></div>
+<div class="clearfix" id="klasse2div"><label>Klasse:</label><div class="input"><ul class="inputs-list" id="stufe_span2"><li><span class="red">Bitte wählen Sie oben die passende Klassenstufe aus</span></li></ul></div></div>
+<div class="clearfix" id="essen2div"><label>Mittagessen:</label><div class="input"><ul class="inputs-list"><li><label name="person2essen"><input type="radio" name="EssenInput2" value="0" checked="checked"/><span>Kein Essen</span></label></li><li><label><input type="radio" name="EssenInput2" value="1"/><span>Hähnchenschnitzel mit Gemüse und Kartoffelpüree</span></label></li><li><label><input type="radio" name="EssenInput2" value="2"/><span>Currywurst mit Pommes Frites</span></label></li><li><label><input type="radio" name="EssenInput2" value="3"/><span>Karotten-Sticks mit Soße und Nudeln (vegetarisch)</span></label></li></ul></div></div></fieldset></div>
+<div class="person" id="person3"><fieldset><legend>Teammitglied 3</legend>
+<div class="clearfix" id="vorname3div"><label>Vorname:</label><div class="input"><input type="text" name="personInput3"/></div></div>
+<div class="clearfix" id="name3div"><label>Nachname:</label><div class="input"><input type="text" name="personInput3"/></div></div>
+<div class="clearfix" id="klasse3div"><label>Klasse:</label><div class="input"><ul class="inputs-list" id="stufe_span3"><li><span class="red">Bitte wählen Sie oben die passende Klassenstufe aus</span></li></ul></div></div>
+<div class="clearfix" id="essen3div"><label>Mittagessen:</label><div class="input"><ul class="inputs-list"><li><label name="person3essen"><input type="radio" name="EssenInput3" value="0" checked="checked"/><span>Kein Essen</span></label></li><li><label><input type="radio" name="EssenInput3" value="1"/><span>Hähnchenschnitzel mit Gemüse und Kartoffelpüree</span></label></li><li><label><input type="radio" name="EssenInput3" value="2"/><span>Currywurst mit Pommes Frites</span></label></li><li><label><input type="radio" name="EssenInput3" value="3"/><span>Karotten-Sticks mit Soße und Nudeln (vegetarisch)</span></label></li></ul></div></div></fieldset></div>
+<div class="person" id="person4"><fieldset><legend>Teammitglied 4</legend>
+<div class="clearfix" id="vorname4div"><label>Vorname:</label><div class="input"><input type="text" name="personInput4"/></div></div>
+<div class="clearfix" id="name4div"><label>Nachname:</label><div class="input"><input type="text" name="personInput4"/></div></div>
+<div class="clearfix" id="klasse4div"><label>Klasse:</label><div class="input"><ul class="inputs-list" id="stufe_span4"><li><span class="red">Bitte wählen Sie oben die passende Klassenstufe aus</span></li></ul></div></div>
+<div class="clearfix" id="essen4div"><label>Mittagessen:</label><div class="input"><ul class="inputs-list"><li><label name="person4essen"><input type="radio" name="EssenInput4" value="0" checked="checked"/><span>Kein Essen</span></label></li><li><label><input type="radio" name="EssenInput4" value="1"/><span>Hähnchenschnitzel mit Gemüse und Kartoffelpüree</span></label></li><li><label><input type="radio" name="EssenInput4" value="2"/><span>Currywurst mit Pommes Frites</span></label></li><li><label><input type="radio" name="EssenInput4" value="3"/><span>Karotten-Sticks mit Soße und Nudeln (vegetarisch)</span></label></li></ul></div></div></fieldset></div>
+<div class="person" id="person5"><fieldset><legend>Teammitglied 5</legend>
+<div class="clearfix" id="vorname5div"><label>Vorname:</label><div class="input"><input type="text" name="personInput5"/></div></div>
+<div class="clearfix" id="name5div"><label>Nachname:</label><div class="input"><input type="text" name="personInput5"/></div></div>
+<div class="clearfix" id="klasse5div"><label>Klasse:</label><div class="input"><ul class="inputs-list" id="stufe_span5"><li><span class="red">Bitte wählen Sie oben die passende Klassenstufe aus</span></li></ul></div></div>
+<div class="clearfix" id="essen5div"><label>Mittagessen:</label><div class="input"><ul class="inputs-list"><li><label name="person5essen"><input type="radio" name="EssenInput5" value="0" checked="checked"/><span>Kein Essen</span></label></li><li><label><input type="radio" name="EssenInput5" value="1"/><span>Hähnchenschnitzel mit Gemüse und Kartoffelpüree</span></label></li><li><label><input type="radio" name="EssenInput5" value="2"/><span>Currywurst mit Pommes Frites</span></label></li><li><label><input type="radio" name="EssenInput5" value="3"/><span>Karotten-Sticks mit Soße und Nudeln (vegetarisch)</span></label></li></ul></div></div></fieldset></div>
+<input id="teamCount" type="hidden" name="teamCount" value="1"/></fieldset></form>
+<span id="messages" class="messages">&nbsp;</span>
+<div class="actions" id="submit" style="display: none; padding-left: 125px;"><span class="image"><img id="ajaxloader" src="../images/ajax-loader.gif" style="display: none; margin-left: auto; margin-right: auto; position: relative" alt="loading"/></span><input class="btn primary" type="submit" value="Daten überprüfen" id="submitButton" onclick="validate_registration()"/>
+</div>
+<div id="review" style="display: none">
+<div id="messageText" class="messageText">Bitte überprüfen Sie die Daten, bevor Sie auf "anmelden" klicken</div><br /><br />
+<table class="table-plain">
+<tr><td class="table-plain-left">Allgemein</td><td class="table-plain-right">Stufe</td><td id="stufeReview"></td></tr>
+<tr><td></td><td class="table-plain-right">Name der Schule</td><td id="schuleReview"></td></tr>
+<tr><td></td><td class="table-plain-right">Region</td><td id="regionReview"></td></tr>
+<tr><td></td><td class="table-plain-right">Teamname</td><td id="teamNameReview"></td></tr>
+<tr><td></td><td class="table-plain-right">Kontaktperson</td><td id="kontaktReview"></td></tr>
+<tr><td></td><td class="table-plain-right">Kontakt-E-Mail</td><td id="emailReview"></td></tr>
+<tr><td></td><td class="table-plain-right">Essen für Begleitperson</td><td id="begleitEssenReview"></td></tr>
+<tr><td></td><td class="table-plain-right">Anzahl Team-Mitglieder</td><td id="countReview"></td></tr>
+</table>
+<hr/>
+<table class="table-plain" id="table1">
+<tr><td class="table-plain-left">Teammitglied 1</td><td class="table-plain-right">Vorname</td><td id="vorname1Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Nachname</td><td id="name1Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Klasse</td><td id="klasse1Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Mittagessen</td><td id="essen1Review"></td></tr>
+</table>
+<hr/>
+<table class="table-plain" id="table2">
+<tr><td class="table-plain-left">Teammitglied 2</td><td class="table-plain-right">Vorname</td><td id="vorname2Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Nachname</td><td id="name2Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Klasse</td><td id="klasse2Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Mittagessen</td><td id="essen2Review"></td></tr>
+</table>
+<hr/>
+<table class="table-plain" id="table3">
+<tr><td class="table-plain-left">Teammitglied 3</td><td class="table-plain-right">Vorname</td><td id="vorname3Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Nachname</td><td id="name3Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Klasse</td><td id="klasse3Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Mittagessen</td><td id="essen3Review"></td></tr>
+</table>
+<hr id="hr4"/>
+<table class="table-plain" id="table4">
+<tr><td class="table-plain-left">Teammitglied 4</td><td class="table-plain-right">Vorname</td><td id="vorname4Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Nachname</td><td id="name4Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Klasse</td><td id="klasse4Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Mittagessen</td><td id="essen4Review"></td></tr>
+</table>
+<hr id="hr5"/>
+<table class="table-plain" id="table5">
+<tr><td class="table-plain-left">Teammitglied 5</td><td class="table-plain-right">Vorname</td><td id="vorname5Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Nachname</td><td id="name5Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Klasse</td><td id="klasse5Review"></td></tr>
+<tr><td></td><td class="table-plain-right">Mittagessen</td><td id="essen5Review"></td></tr>
+</table>
+<div class="actions" id="completeActions">
+<input class="btn primary" type="submit" value="Daten bestätigen und anmelden" onclick="completeRegistration()"/><input class="btn" value="Daten korrigieren" onclick="setBack()" style="margin-left: 25px" type="submit"/>
+</div>
+</div>
+</div>
+<!--Content Ende-->
+
+<div id="right">
+	<img src="../images/TdM_Logo_2012.png" alt="Logo Kleinsche Flasche" />
+    
+    <h5 class="download">LINKS ZUM DOWNLOAD</h5>
+    <ul class="download">
+        <li><a href="../download/Flyer_TdM_2012_FU_Berlin.pdf">Flyer zum TdM 2012</a></li>
+        <li><a href="../download/TdM-Programmheft_2012.pdf">TdM-Programmheft 2012</a></li>
+        <li><a href="../download/TdM-Wettbewerb_Merkblatt.pdf">TdM-Wettbewerb Merkblatt</a></li>
+    </ul>
+    
+    <h5 id="quiz">QUIZ ZUM WARMLAUFEN</h5>
+    <ul class="download">
+        <li><a href="http://www.fu-berlin.de/campusleben/lernen-und-lehren/2012/120404_matheraetsel1/index.html">1. Aufgabe</a></li>
+        <li><a href="http://www.fu-berlin.de/campusleben/lernen-und-lehren/2012/120411_matheraetsel2/index.html">2. Aufgabe</a></li>
+        <li><a href="http://www.fu-berlin.de/campusleben/lernen-und-lehren/2012/120418_matheraetsel3/index.html">3. Aufgabe</a></li>
+        <li><a href="http://www.fu-berlin.de/campusleben/lernen-und-lehren/2012/120425_matheraetsel4/index.html">4. Aufgabe</a></li>
+    </ul>
+    
+</div>
+<br class="clear" />
+ 
+<!--Aktualisierungsdatum Anfang-->
+<p id="date">
+    Stand: 18.04.2012
+    <img src="../images/TdM_Logo_2012_Baer.png" alt="Logo des Tages der Mathematik 2012" />
+</p>
+<!--Aktualisierungsdatum Ende-->
+    
+<!--Footer Anfang-->
+<div id="footer">
+	<!--Verweis zur Freien Universität und Mathematik Institut Anfang-->
+	<p id="footer-university">
+    	<a href="http://www.fu-berlin.de/" title="Zur Startseite der Freien Universität Berlin">
+      		Freie Universität Berlin
+        </a>
+    </p>
+    <p id="footer-institute">
+    	<a href="http://www.math.fu-berlin.de/index.html" title="Zur Homepage des Mathematischen Institus der FU Berlin">
+        	INSTITUT FÜR MATHEMATIK
+        </a>
+    </p>
+    <!--Verweis zur Freien Universität und Mathematik Institut Ende-->
+</div>
+<!--Footer Ende-->
+   
+<!--Service-Navigation Anfang-->
+    <ul id="footer-navigation">
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="http://www.mi.fu-berlin.de/impressum/">Impressum</a></li>
+    </ul>
+ <!--Service-Navigation Ende-->
+
+
+</div>
+<script type="text/javascript" src="../scripts/js_lib.js"></script>
+</body>
+</html>

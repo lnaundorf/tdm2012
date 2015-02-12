@@ -1,0 +1,628 @@
+﻿@charset "utf-8";
+
+html { 
+ 	padding: 0px;
+  	margin: 0px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%; 
+	color: #222222;
+	background: #eeeeee;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Positionierung der Seite in der Mitte des Fensters*/
+#box {
+	width: 960px;
+	margin: 0px auto;
+	padding: 0 15px;
+	text-align: justify;
+	background-color: #ffffff;
+}
+
+/*Kopfbereich mit dem Logo der Freien Universität*/
+h1 {
+	margin: 10px 0 0 0;
+	float: left;
+}
+
+/*Header-Bild blau mit Pi-Gebäude*/
+h2 {
+	clear: left;
+	color: #ffffff;
+	font-size: 120%;
+	font-weight: bold;
+	padding: 35px 0 0 15px;
+	margin: 0;
+	background-image: url(../images/math_pi.jpg);
+	height: 45px;
+	width: 943px;
+}
+
+/*1. Seitenüberschrift*/
+h3 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 155%;
+	line-height: 1.4em;
+	font-weight: normal;
+	margin: 12px 0px 4px 0px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	color: #222222;
+}
+
+/*2. Seitenüberschrift*/
+h4 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;	
+	font-size: 130%;
+	line-height: 1.4em;
+	font-weight: normal;
+	margin: 12px 0px 4px 0px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #222222;
+}
+
+/*Formatierung der Links zum Download in der rechten Spalte*/
+h5 {
+	font-size: 90%;
+	font-weight: bold;
+	margin: 15px 0px 0px 0px;
+	color: #222222;
+	padding-left: 5px;
+}
+
+/*Startseite Hervorhebung oberer Textblock*/
+h6 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;	
+	font-size: 130%;
+	line-height: 3em;
+	font-weight: normal;
+	margin: 12px 0px 4px 0px;
+	color: #222222;
+}
+
+/*für den Fließtext*/
+p {
+	line-height: 1.5em;
+	margin: 0 0 0.5em;
+}
+
+/*zur leichten Hervorhebung in kursiv und grau*/
+i {
+	color: #666666;
+}
+
+k {
+	color: #222222;
+	font-style: italic;
+}
+
+/*Klasse zum Löschen von float*/
+.clear {
+	clear: both;	
+}
+
+/*Klasse zur mittigen Testausrichtung*/
+.mittig {
+	text-align: center;
+}
+
+/*Klasse zur rechtsbündigen Textausrichtung*/
+.rechtsbuendig {
+	text-align: right;
+	padding-right: 10px;
+}
+
+/*Klasse zur linksbündigen Ausrichtung mit rechts umfließenden Text*/
+.left {
+	float: left;
+	margin: 0;
+	padding: 15px 25px 20px 0;
+}
+
+/*Klasse zur rechtsbündigen Ausrichtung mit links umfließenden Text*/
+.right {
+	float: right;
+	margin: 0;
+	padding: 5px 0 20px 25px;
+}
+
+/*Klasse zur linksbündigen Ausrichtung mit rechts umfließenden Text*/
+.leftmiddle {
+	float: left;
+	margin: 0;
+	padding: 10px 35px 15px 0;
+}
+
+/*Klasse zur rechtsbündigen Ausrichtung mit links umfließenden Text*/
+.rightmiddle {
+	float: right;
+	margin: 0;
+	padding: 5px 0 20px 35px;
+}
+
+/*Klasse zur linksbündigen Ausrichtung mit rechts umfließenden Text auf der Startseite*/
+.leftmiddle_i {
+	float: left;
+	margin: 0;
+	padding: 10px 15px 10px 0;
+}
+
+/*Klasse zur rechtsbündigen Ausrichtung mit links umfließenden Text auf der Startseite*/
+.rightmiddle_i {
+	float: right;
+	margin: 0;
+	padding: 5px 0 0px 15px;
+}
+
+/*Klasse für den rechts stehenden Text auf der Startseite*/
+#text_r_i {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/*Klasse für den links stehenden Text auf der Startseite*/
+#text_l_i {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/*Klasse zur zentrierten Ausrichtung mit Bildunterschrift*/
+.bildunterschrift {
+	color: #666666;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.space {
+	padding-bottom: 10px;
+}
+
+/*SERVICE NAVIGATION im oberen Bereich mit Sitemap, Kontakt und Impressum*/
+#service-navigation {
+	list-style-type: none;
+	margin: 0;
+    padding: 15px 20px 0 0;
+    text-align: right;
+	font-size: 85%;
+}
+
+#service-navigation li {
+	display: inline ;
+	padding: 0 5px;
+}
+
+#service-navigation a:link {
+	text-decoration: none;
+	color: #222222;
+}
+
+#service-navigation a:visited {
+	text-decoration: none;
+	color: #222222;
+}
+
+/*MENUE in der linken Spalte*/
+#left {
+	width: 180px;
+	padding: 0 0 15px 0;
+	margin: 0 10px 0 0;
+	float: left;
+	background-color: #ffffff;
+}
+
+#menu {
+	float: left;
+	width: 186px;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	list-style-type: none;
+	border-bottom: 1px solid #cccccc;
+}
+
+#menu li a{
+	display: block;
+	padding: 5px 20px 5px 15px;
+}
+
+#menu li a:link {
+	text-decoration: none;
+	color: #222222;
+}
+
+#menu li a:hover {
+	display: block;
+	color: #222222;
+	background-color: #f4f4f4;
+}
+
+#menu li a:visited {
+	text-decoration: none;
+	color: #222222;
+}
+
+/*Untermenüpunkte*/
+.lower_menu {
+	font-size: 80%;
+	list-style-type: none;
+	border-bottom: 1px solid #cccccc;
+	text-decoration: none;
+}
+
+/*DOWNLOAD - Bereich in der rechten Spalte*/
+#right {
+	width: 176px;
+	text-align: center; 
+	float: left;
+	background-color: #ffffff;
+}
+
+/*Bild in der rechten Spalte*/
+#right img{
+	width: 176px;
+	padding: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	float: left;
+	background-color: #eeeeee;
+}
+
+h5.download {
+	margin-top: 160px;
+}
+
+.download {
+	width: 176px;
+	text-align: left;
+	list-style-type: none;
+	padding-left: 5px;
+}
+
+.download li {
+	background-image: url("../images/list_arrow.png");
+    background-position: 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+	padding: 5px 0 0 13px;
+}
+
+/*Links im Download-Bereich*/
+.download a:link {
+	text-decoration: none;
+	color: #666666;
+}
+
+.download a:hover {
+	text-decoration: underline;
+	color: #666666;
+}
+
+.download a:visited {
+	text-decoration: none;
+	color: #666666;
+}
+
+#quiz {
+	margin-top: 35px;
+	text-align: left;
+}
+
+.attention {
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	font-size: 90%;
+	background-color: #ee312f;
+	color: #fff;
+}
+
+/*quadratische Listenpunkte*/
+.list li {
+	list-style-type: square;
+	padding-left: 0px;
+	margin-left: 25px;
+}
+
+.registration {
+	text-align: center; 
+	font-size: 16pt; 
+	margin: 20px;
+}
+
+/*FOOTER - Bereich unten*/
+#footer {
+	height: 50px;
+	margin: 20px 0 0;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	padding-top: 5px;
+}
+
+/*Link zur Freien Universität im Footer-Bereich*/
+#footer-university a:link {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	color: #333333;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+#footer-university a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+
+/*Link zum Mathematik-Institut im Footer-Bereich*/
+#footer-institute a:link {
+	font-size: 85%;
+	color: #999999;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+#footer-institute a:visited {
+	color: #999999;
+	text-decoration: none;
+}
+
+/*Navigation im Footer-Bereich mit Sitemap, Impressum und Kontakt*/
+#footer-navigation {
+	list-style-type: none;
+	margin: 0;
+    padding: 15px 20px 15px 0;
+    text-align: right;
+	font-size: 85%;
+}
+
+#footer-navigation li {
+	display: inline ;
+	padding: 0 5px;
+}
+
+#footer-navigation a:link {
+	text-decoration: none;
+	color: #999999;
+}
+
+#footer-navigation a:visited {
+	text-decoration: none;
+	color: #999999;
+}
+
+/*CONTENT - Bereich in der Mitte*/
+#content {
+	width: 569px;
+	padding: 5px;
+	float: left;
+	background-color: #ffffff;
+	overflow: auto;
+	margin: 0 3px 0 0;
+}
+
+/*Links im Content-Bereich*/
+#content a:link {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
+#content a:visited {
+	text-decoration: none;
+	color: #0066CC;
+}
+
+a:link img {
+	border: 0;
+}
+
+a:visited img {
+	border: 0;
+}
+
+/*Links in der Sitemap*/
+#sitemap li a {
+	font-family: Arial, Helvica, sans-serif;
+	font-size: 100%; 
+	color: #222222;
+	text-decoration: none;
+	margin: 0 0 0 25px;
+	padding: 0px;
+	line-height: 150%;
+}
+
+#sitemap li a:hover {
+	text-decoration: underline;
+}
+
+/*Unterpunkte in der Sitemap*/
+#lower_sitemap {
+	font-family: Arial, Helvica, sans-serif;
+	font-size: 90%; 
+	color: #222222;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	line-height: 150%;
+}
+
+/*Ungebordnete Listen*/
+ul {
+	margin: 0;
+ 	padding: 0 0 5px;
+}
+
+/*Für Bilder in Tabellen*/
+td img {
+	padding-right: 10px;
+}
+
+/*Tabellen mit Rahmen*/
+li,
+ul,
+table,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1.5em;
+  font-family: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*für Tabellen im Content-Bereich mit Abständen*/
+.contenttabelle td {
+	padding: 3px;
+	margin: 0;
+}
+
+/*Stand der Seite*/
+#date {
+	margin-left: 195px;
+	font-size: 85%;
+	color: #999999;
+}
+
+#date img {
+	padding-left: 520px;
+	margin-top: 0px;
+}
+
+
+#exhibition_right {
+	float: right;
+	margin: 0;
+	padding: 20px 0 15px 25px;
+}
+
+.exhibition_right p{
+	padding: 35px 0 40px 0;
+	text-align: left;
+}
+
+.exhibition_right img {
+	float: right;
+	margin: 0;
+	padding: 10px 0 15px 25px;
+}
+
+.exhibition_left p {
+	padding: 35px 0 40px 0;
+	text-align: left;
+}
+
+.lecture_left img {
+	float: left;
+	margin: 0;
+	padding: 10px 25px 15px 0;
+}
+
+.lecture_right p{
+	padding: 20px 0 40px 0;
+	text-align: left;
+}
+
+.lecture_left_2 img {
+	float: left;
+	margin: 0;
+	padding: 10px 25px 15px 0;
+}
+
+.lecture_left_2 p{
+	padding: 5px 0 40px 0;
+	text-align: left;
+}
+
+.lecture_right img {
+	float: right;
+	margin: 0;
+	padding: 10px 0 15px 25px;
+}
+
+.lecture_left p {
+	padding: 20px 0 40px 0;
+	text-align: left;
+}
+
+.exhibition_left img {
+	float: left;
+	margin: 0;
+	padding: 10px 25px 15px 0;
+}
+
+#wettbewerb_right {
+	float: right;
+	margin: 0;
+	padding: 35px 0 15px 25px;
+}
+
+#wettbewerb_left {
+	float: left;
+	margin: 0;
+	padding: 6px 25px 20px 0;
+}
+
+.space_left {
+	margin: 0;
+	padding: 35px 0 40px 0;
+}
+
+.picture_right {
+	float: right;
+	margin: 0;
+	padding: 5px 0 110px 25px;
+}
+
+.zitat {
+	padding: 0 20px;
+}
+
+#rightprizes {
+	float: right;
+	margin: 0;
+	padding: 5px 0 20px 25px;
+}
+
+#leftprizes {
+	float: left;
+	margin: 0;
+	padding: 5px 25px 20px 0;
+}
+
+#star {
+	float: right;
+	margin: 0;
+	padding: 5px 0 0 25px;
+}
+
+#pictures td img {
+	padding: 0;
+	margin: 0;
+}
+
+.left_p {
+	padding-right: 13px;
+} 
+
+#pictures {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}

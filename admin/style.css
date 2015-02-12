@@ -1,0 +1,151 @@
+body {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+.login {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	border: solid 1px;
+	padding: 20px;
+	width: 375px;
+	font-size: 14pt;
+}
+
+.logintable input {
+	font-size: 14pt;
+}
+
+.logintable td {
+	font-size: 14pt;
+	padding: 0px;
+}
+
+.error {
+	color: #C00;
+	font-weight: bold;
+}
+
+.success {
+	color: #9C0;
+	font-weight: bold;
+}
+
+.navtable {
+	width: 100%;
+}
+
+.navtable td { 
+	font-size: 14pt;
+}
+
+ul {
+	padding-left: 20px;
+}
+
+.content {
+	/*width: 1100px;*/
+	/*margin-left: 170px;*/
+}
+
+.left {
+	width: 100px;
+}
+
+.searchtable {
+	font-size: 9pt;
+}
+
+.searchtable input {
+	font-size: 9.5pt;
+}
+
+.queryresult {
+	white-space: pre;
+	margin-top: 20px;
+	font-family: monospace;
+}
+
+.buttonright {
+	width: 145px;
+}
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.table th, .table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table th {
+  font-weight: bold;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+.table thead:first-child tr th, .table thead:first-child tr td {
+  border-top: 0;
+}
+.table tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.table-condensed th, .table-condensed td {
+  padding: 3px 4px;
+  vertical-align: middle;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.table-bordered th + th,
+.table-bordered td + td,
+.table-bordered th + td,
+.table-bordered td + th {
+  border-left: 1px solid #ddd;
+}
+.table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+.table-bordered thead:first-child tr:first-child th:first-child, .table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-radius: 4px 0 0 0;
+  -moz-border-radius: 4px 0 0 0;
+  border-radius: 4px 0 0 0;
+}
+.table-bordered thead:first-child tr:first-child th:last-child, .table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-radius: 0 4px 0 0;
+  -moz-border-radius: 0 4px 0 0;
+  border-radius: 0 4px 0 0;
+}
+.table-bordered thead:last-child tr:last-child th:first-child, .table-bordered tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+}
+.table-bordered thead:last-child tr:last-child th:last-child, .table-bordered tbody:last-child tr:last-child td:last-child {
+  -webkit-border-radius: 0 0 4px 0;
+  -moz-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px 0;
+}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #f5f5f5;
+}
+
+.middle td {
+	vertical-align: middle;
+}
